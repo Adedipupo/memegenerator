@@ -4,7 +4,9 @@ class MemeGen extends React.Component {
     constructor() {
         super()
         this.state = {
-
+            topText: "",
+            bottomText:"",
+            randomImage:""
         }
     }
     render() {
