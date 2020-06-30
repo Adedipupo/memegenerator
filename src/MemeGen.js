@@ -11,7 +11,8 @@ class MemeGen extends React.Component {
         
     }
     componentDidMount(){
-        
+        fetch("https://api.imgflip.com/get_memes")
+        .then()
     }
 
     render() {
