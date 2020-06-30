@@ -12,7 +12,10 @@ class MemeGen extends React.Component {
     }
     componentDidMount(){
         fetch("https://api.imgflip.com/get_memes")
-        .then()
+        .then(response => response.json())
+        .then(response => {
+            const {memes} response.data
+        })
     }
 
     render() {
