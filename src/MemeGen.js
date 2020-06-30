@@ -10,6 +10,7 @@ class MemeGen extends React.Component {
             allMemeImgs: [ ]
         }
         this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
     }
 
 
@@ -37,7 +38,7 @@ class MemeGen extends React.Component {
     render() {
         return (
             <div>
-                <form className="meme-form">
+                <form className="meme-form" onSubmit={this.handleSubmit}>
                   <input type="text" 
                      name="topText" 
                      placeholder="topText"
