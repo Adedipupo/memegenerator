@@ -19,12 +19,13 @@ class MemeGen extends React.Component {
         .then(response => {
             const {memes} = response.data
             this.setState({allMemeImgs : memes})
-        })
-
+        });
+    
         handleChange(event) {
-            const {name,value} = event.target
-            this.setState({ [name] : value })
-        }    
+            const { name, value } = event.target
+            this.setState({ [name]: value })
+        }
+
     }
 
     render() {
