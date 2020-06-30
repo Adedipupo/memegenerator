@@ -10,7 +10,7 @@ class memeGen extends React.Component {
     render() {
         return (
             <div>
-                Header here!!
+                memeGen here!!
             </div>
         )
     }
