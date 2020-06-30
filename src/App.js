@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import memeGen from './memeGen';
+import MemeGen from './MemeGen';
 
 function App() {
   return (
     <div>
         <Header />
-        <memeGen />
+        <MemeGen />
     </div>
   );
 }
