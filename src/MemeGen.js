@@ -6,7 +6,7 @@ class MemeGen extends React.Component {
         this.state = {
             topText: "",
             bottomText:"",
-            randomImage: "http://i.imgflip.com/1bij.jpg"
+            randomImg: "http://i.imgflip.com/1bij.jpg"
         }
     }
     render() {
