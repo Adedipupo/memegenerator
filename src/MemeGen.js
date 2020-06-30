@@ -16,8 +16,7 @@ class MemeGen extends React.Component {
         .then(response => response.json())
         .then(response => {
             const {memes} = response.data
-            console.log(memes[0])
-            this.setState({allMemeImg : memes})
+            this.setState({allMemeImgs : memes})
         })
     }
 
