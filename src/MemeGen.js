@@ -31,6 +31,8 @@ class MemeGen extends React.Component {
                      onChange={this.handleChange}
                   />
 
+                {this.state.randomImg}
+                
                     <button>Gen</button>
                 </form>
             </div>
