@@ -28,6 +28,7 @@ class MemeGen extends React.Component {
                      name="topText" 
                      placeholder="topText"
                      value={this.state.topText}   
+                     onChange={this.handleChange}
                   />
 
                     <button>Gen</button>
