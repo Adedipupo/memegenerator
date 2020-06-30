@@ -22,11 +22,11 @@ class MemeGen extends React.Component {
             this.setState({allMemeImgs : memes})
         });
     
-        handleChange(event) {
+       const handleChange = (event) => {
             const { name, value } = event.target
             this.setState({ [name]: value })
         }
-        handleSubmit(event) {
+        const handleSubmit = (event) =>{
             event.preventDefault()
             const randNum = Math.floor(Math.random() * this.state.allMemeImgs.length)
             const randMemeImg = this.state.allMemeImgs[randNum].url
@@ -45,8 +45,6 @@ class MemeGen extends React.Component {
                      value={this.state.topText}   
                      onChange={this.handleChange}
                   />
-
-                {this.state.randomImg}
 
                 <input type="text"
                     name="bottomText"
