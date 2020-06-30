@@ -24,7 +24,11 @@ class MemeGen extends React.Component {
         return (
             <div>
                 <form className="meme-form">
-                  <input type="text" placeholder="topText"/>
+                  <input type="text" 
+                     name="topText" 
+                     placeholder="topText"
+                     value={this.state.topText}   
+                  />
 
                     <button>Gen</button>
                 </form>
