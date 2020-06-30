@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Header extends React.Component {
+class memeGen extends React.Component {
     constructor() {
         super()
         this.state = {
@@ -16,4 +16,4 @@ class Header extends React.Component {
     }
 }
 
-export default Header;
+export default memeGen;
