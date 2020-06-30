@@ -11,9 +11,7 @@ class MemeGen extends React.Component {
         }
         this.handleChange = this.handleChange.bind(this);
     }
-    handleChange(){
 
-    }
 
     componentDidMount(){
         fetch("https://api.imgflip.com/get_memes")
@@ -22,6 +20,11 @@ class MemeGen extends React.Component {
             const {memes} = response.data
             this.setState({allMemeImgs : memes})
         })
+
+        handleChange(event){
+            const {name,value} = event.target
+            this.setState
+        }    
     }
 
     render() {
