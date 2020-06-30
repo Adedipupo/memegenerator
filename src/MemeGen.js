@@ -15,7 +15,8 @@ class MemeGen extends React.Component {
         fetch("https://api.imgflip.com/get_memes")
         .then(response => response.json())
         .then(response => {
-            const {memes} response.data
+            const {memes} = response.data
+            console.log(memes[0])
             this.setState({allMemeImg : memes})
         })
     }
