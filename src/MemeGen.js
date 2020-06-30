@@ -9,8 +9,12 @@ class MemeGen extends React.Component {
             randomImg: "http://i.imgflip.com/1bij.jpg",
             allMemeImgs: [ ]
         }
-        
+        this.handleChange = this.handleChange.bind(this);
     }
+    handleChange(){
+
+    }
+
     componentDidMount(){
         fetch("https://api.imgflip.com/get_memes")
         .then(response => response.json())
