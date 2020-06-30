@@ -32,7 +32,15 @@ class MemeGen extends React.Component {
                   />
 
                 {this.state.randomImg}
-                
+
+                <input type="text"
+                    name="bottomText"
+                    placeholder="bottomText"
+                    value={this.state.bottomText}
+                    onChange={this.handleChange}
+                />
+
+
                     <button>Gen</button>
                 </form>
             </div>
